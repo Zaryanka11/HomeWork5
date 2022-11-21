@@ -73,6 +73,8 @@ class Window(QWidget):
         insert_text_object_button = QPushButton(self.tr("Insert Image"))
 
         file = os.fspath(Path(__file__).resolve().parent / 'files' / 'frog.svg')
+        file = os.fspath(Path(__file__).resolve().parent / 'files' / 'heart.svg')
+        file = os.fspath(Path(__file__).resolve().parent / 'files' / 'chicken.svg')
         self._file_name_line_edit.setText(file)
         insert_text_object_button.clicked.connect(self.insert_text_object)
 
